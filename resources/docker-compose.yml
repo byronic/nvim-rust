@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  app:
+    platform: linux/amd64
+    build:
+      context: .
+    image: nvim-rust
+    restart: unless-stopped
+    volumes:
+      - $HOME/Development:/home/neo/Development
