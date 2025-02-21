@@ -3,7 +3,8 @@
 ```
 cd resources
 docker-compose up -d
-docker exec -it resources_app_1 nvim
+docker exec -it resources_app_1 /bin/bash
+nvim
 ```
 
 Do all of your git work outside of this.
